@@ -16,3 +16,14 @@ Push your changes to the remote repo with: git push
 Inspect your commits on github'''
 
 n = int(input("Enter the length of the sequence: ")) # Do not change this line
+
+for i in range(1, n+1):
+  if i == 1:
+    current = i
+  elif i == 2:
+    current = i
+  elif i == 3:
+    current = i
+  else:
+    current = i 
+  print(current)
