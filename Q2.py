@@ -15,15 +15,18 @@ When you have finished your implementation:
 Push your changes to the remote repo with: git push
 Inspect your commits on github'''
 
-n = int(input("Enter the length of the sequence: ")) # Do not change this line
+#1, 2, 3, 6, 11, 20, 37, _
+n = int(input("Enter the length of the sequence: ")) # Do not change this line  
 
-for i in range(1, n+1):
+
+for i in range(1, n+1): #loop from 1 to n (the input)
   if i == 1:
-    current = i
+    current = first = i   #first = 1
   elif i == 2:
-    current = i
+    current = second = i  #second = 2
   elif i == 3:
-    current = i
+    current = third = i   #third = 3
   else:
-    current = i 
+    current = first + second + third   #the current is the three numbers before added together
+    first, second, third = second, third, current  #first = second, second = third, third = current
   print(current)
